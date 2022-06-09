@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Lista de comentarios
+{% endblock %}
+
+
+{% block body %}
+    <body id="fondoTablas">
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <a type="button" class="btn btn-success" href="{% url 'crear' %}" role="button">Agregar comentario</a>
+        </div>
+        <div class="card-body">
+            <h3 class="text-center">Comentarios</h3>
+            <br>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for comentario in comentarios %}
+                    <tr>
+                        <td>{{ comentario.id }}</td>
+                        <td>{{ comentario.nombre }}</td>
+                        <td>{{ comentario.fecha }}</td>
+                        <td>{{ comentario.descripcion }}</td>
+                        <td>
+                            <a type="button" class="btn btn-info" href="{% url 'editar' comentario.id %}" role="button">Editar</a>
+                            │
+                            <a type="button" class="btn btn-danger" href="{% url 'eliminar' comentario.id %}"
+                               onclick="return asegurar();" role="button">Borrar</a>
+                        </td>
+                    </tr>
+
+                {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <script>
+
+        function asegurar() {
+            rc = confirm("¿Seguro que desea BORRAR el comentario?");
+            return rc;
+        }
+    </script>
+    </body>
+{% endblock %}
+

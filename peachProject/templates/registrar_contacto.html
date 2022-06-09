@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}
+    Registrar contacto
+{% endblock %}
+
+
+{% block body %}
+    <body>
+    <h2 class="text-center">¡Registrate para ser contactado por nosotros!</h2>
+    <br>
+    <form action="" method="POST">{% csrf_token %}
+        <div id="contContacto">
+            <div id="con1" class="g-col-6">
+                <table>
+                    {{ form.as_table }}
+                </table>
+                <br>
+                <input role="button" class="btn btn-success" type="submit" value="Registrar"/> &nbsp
+                <a type="button" class="btn btn-warning" href="{% url 'encuestas' %}" role="button">Cancelar</a>
+            </div>
+
+            <div id="con2" class="g-col-6">
+                <img src="/peach/static/imagenes/contacto.png" alt="" id="imgcontacto">
+            </div>
+        </div>
+        <br>
+    </form>
+
+    </body>
+{% endblock %}

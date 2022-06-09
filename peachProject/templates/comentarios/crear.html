@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Agregar comentario {% endblock %}
+
+
+{% block body %}
+    <body>
+    <br>
+    <h2 class="text-center">Crear Comentario</h2>
+    <div id="dc">
+        <div id="d1">
+            <div class="card-body">
+                <h4 class="card-title">Datos del comentario</h4>
+                {% include 'comentarios/form.html' %}
+            </div>
+
+        </div>
+        <div id="d2">
+            {#Imagen de comentario#}
+        </div>
+    </div>
+    </body>
+{% endblock %}

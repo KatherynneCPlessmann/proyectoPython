@@ -1,0 +1,348 @@
+#fondo {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#principal
+{
+    background-color: #aaff9a;
+    font-weight: bold;
+    font-size: large ;
+}
+
+#texto
+{
+    color: black;
+    text-shadow:  gray 0.1em 0.1em 0.2em;
+    text-align: center;
+}
+
+#texto2
+{
+    color: #6aaa1d;
+    background-color: #d5d5d5;
+    width: fit-content;
+    display:inline-block;
+    text-align:center;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#footer {
+    background-color: #ffc474;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto;
+}
+#contenedorRespuesta{
+    padding: 2%;
+    width: 100%;
+    height: 70vh;
+}
+
+#divImagenG {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://img.freepik.com/vector-gratis/ilustracion-vector-icono-carpeta-plana_149152-702.jpg");
+}
+
+#divImagenB {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://us.123rf.com/450wm/brokenhill/brokenhill1803/brokenhill180300025/96745173-icono-de-papelera-en-la-ilustraci%C3%B3n-de-vector-de-fondo-blanco.jpg");
+}
+
+#contEncuesta{
+    margin-top: 2%;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ieC1{
+    padding-left: 5%;
+    width: 25%;
+    height: 100%;
+}
+#ieC2{
+    width: 75%;
+    height: 100%;
+    background-size: 75% 95%;
+    background-position: center;
+    background-image : url('../static/imagenes/encuesta.png');
+    background-repeat: no-repeat;
+
+}
+
+#dc{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#d1{
+    margin-top: 3%;
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+}
+#d2{
+    width: 50%;
+    height: 100%;
+    background-size: 65% 90%;
+    background-position: center;
+    background-image : url('../static/imagenes/comentario.png');
+    background-repeat: no-repeat;
+}
+
+#contContacto{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#con1{
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+}
+#con2{
+    width: 50%;
+    min-height: 100%;
+}
+
+#imgcontacto{
+    display: block;
+    width: 70%;
+    height: 70%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+#esp{
+    margin-left: 5%;
+}
+
+/*ERRORES*/
+#error401
+{
+    background-color: #aeff4d;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+}
+
+#div-401
+{
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    display:inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#err401
+{
+    border-radius: 30px;
+    margin-top: 0;
+    width: 25%;
+}
+
+#err401-2
+{
+    border-radius: 30px;
+    margin-top: 35px;
+    width: 25%;
+}
+
+#error403
+{
+    background-color: #ffc474;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+}
+
+#div-403
+{
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    display:inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#err403
+{
+    border-radius: 30px;
+    margin-top: 0;
+    width: 25%;
+}
+
+#err403-2
+{
+    border-radius: 30px;
+    margin-top: 40px;
+    width: 20%;
+}
+
+#error404
+{
+    background-color: #aeff4d;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+#div-404
+{
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    display:inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+#err404
+{
+    border-radius: 30px;
+    margin-top: 0;
+    width: 25%;
+}
+
+#err404-2
+{
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+#error408
+{
+    background-color: #aeff4d;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+#div-408
+{
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    display:inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+#err408
+{
+    border-radius: 30px;
+    margin-top: 0;
+    width: 25%;
+}
+
+#err408-2
+{
+    border-radius: 30px;
+    margin-top: 40px;
+    width: 30%;
+}
+
+#error502
+{
+    background-color: #ffc474;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+#div-502
+{
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    display:inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+#err502
+{
+    border-radius: 30px;
+    margin-top: 0;
+    width: 25%;
+}
+
+#err502-2
+{
+    border-radius: 30px;
+    margin-top: 40px;
+    width: 23%;
+}
+
+#error503
+{
+    background-color: #aeff4d;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+#div-503
+{
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    display:inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+#err503
+{
+    border-radius: 30px;
+    margin-top: 0;
+    width: 25%;
+}
+
+#err503-2
+{
+    border-radius: 30px;
+    margin-top: 40px;
+    width: 26%;
+}

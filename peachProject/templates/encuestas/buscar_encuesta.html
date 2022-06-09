@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Busqueda de Encuestas
+{% endblock %}
+
+{% block body %}
+    <body id="fondoTablas">
+    <br>
+    <div id="esp">
+        <form action="" method="GET">
+            <input type="text" name="txtBusquedaE"/>
+            <input type="submit" value="buscar"/>
+        </form>
+        {% if msj %}
+            <h4> {{ msj }}  </h4>
+        {% endif %}
+    </div>
+    <br>
+    <div class="card">
+
+        <div class="card-body">
+            <h3 class="text-center">Datos de la encuesta</h3>
+            {% if encuestas %}
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Ocupación</th>
+                        <th>Experiencia</th>
+                        <th>Estado</th>
+                        <th>Opciones</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    {% for item in encuestas %}
+                        <tr>
+                            <td>{{ item.ocupacion }}</td>
+                            <td>{{ item.experiencia }}</td>
+                            <td>{{ item.estado.estado }}</td>
+                            <td>
+                                <a type="button" class="btn btn-info" href="{% url 'modificarE' item.id %}"
+                                   role="button">Editar</a>
+                                │
+                                <a type="button" class="btn btn-danger" href="{% url 'eliminarE' item.id %}"
+                                   role="button">Borrar</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            {% endif %}
+        </div>
+    </div>
+
+    </body>
+{% endblock %}

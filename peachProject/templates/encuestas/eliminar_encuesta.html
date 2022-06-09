@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Eliminar encuesta
+{% endblock %}
+
+{% block body %}
+    <body>
+    <form action="" method="POST">{% csrf_token %}
+        <div class="grid" id="contEncuesta">
+
+            <div id="ieC1" class="g-col-6">
+
+                <h2 class="card-title">Eliminar encuesta</h2>
+                <br>
+                <table>
+                    {{ form.as_table }}
+                </table>
+                <br> <br>
+                <input role="button" class="btn btn-danger" type="submit" value="Eliminar"/> &nbsp
+                <a type="button" class="btn btn-warning" href="{% url 'encuestas' %}" role="button">Cancelar</a>
+            </div>
+            <div id="ieC2" class="g-col-6">
+                {# Imagen de encuesta#}
+            </div>
+        </div>
+    </form>
+
+    </body>
+{% endblock %}
